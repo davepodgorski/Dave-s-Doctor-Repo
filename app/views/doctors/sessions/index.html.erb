@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Patients (<%= @patients.length %>)</h1>
+  <%= link_to("New Patient", "/patients/new") %>
+
+  <% @patients.each do |patient| %>
+    <p><%= patient.title %></p>
+    <p><%= diagnosis.title %></p>
+  <% end %>
+  </body>
+</html>
